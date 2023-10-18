@@ -1,28 +1,63 @@
-.choiceBtn {
-  font-family: "Tilt Neon", sans-serif;
-  font-weight: 400;
-  line-height: 50px;
-  width: 75px;
-  border-radius: 25px;
-  background-color: lime;
-  color: rgb(55, 55, 55);
+* {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-#gameDiv {
+#appDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   font-family: "Pixelify Sans", sans-serif;
-  border: 3px solid;
+  margin-top: 30px;
+  width: 60%;
+  border: 1px solid;
   border-radius: 25px;
   padding: 10px;
   background-color: rgb(55, 55, 55);
   text-align: center;
 }
 
+.result {
+  margin-bottom: 20%;
+}
+
+#gameDiv {
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+
+#controlDiv {
+  margin-bottom: 10%;
+}
+
+.choiceBtn {
+  line-height: 50px;
+  width: 75px;
+  border-radius: 25px;
+  background-color: rgb(65, 65, 65);
+  color: rgb(55, 55, 55);
+  border: none;
+  cursor: pointer;
+}
+.choiceBtn:hover {
+  background-color: lime;
+}
+
+span.iconBtn {
+  font-size: 30px;
+  vertical-align: middle;
+}
+
 #playerText {
   color: lime;
 }
 
-#computertText {
-  color: red;
+#computerText {
+  color: blueviolet;
 }
 
 #resultText {
